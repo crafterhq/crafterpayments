@@ -13,13 +13,13 @@ CDN (versioned, immutable file + SRI):
 <!-- sri:start -->
 ```html
 <script src="https://js.crafterpayments.com/v1/crafterpayments-0.1.0.umd.min.js"
-        integrity="sha384-jI98pUMUoZoFyKSrFMS/bHc9QqfWCnyGH0j+4Rxnr8ohUgBEQe7qSxhEeRVCP7xQ"
+        integrity="sha384-oa/Dy4TVny/MN2Q010/zqEsA144biaW67M95hzraMO4U32Klp48p3x0wCD3scBYi"
         crossorigin="anonymous"></script>
 ```
 
 | Version | File | SRI |
 |---|---|---|
-| 0.1.0 | `crafterpayments-0.1.0.umd.min.js` | `sha384-jI98pUMUoZoFyKSrFMS/bHc9QqfWCnyGH0j+4Rxnr8ohUgBEQe7qSxhEeRVCP7xQ` |
+| 0.1.0 | `crafterpayments-0.1.0.umd.min.js` | `sha384-oa/Dy4TVny/MN2Q010/zqEsA144biaW67M95hzraMO4U32Klp48p3x0wCD3scBYi` |
 <!-- sri:end -->
 
 Loaded with a script tag, the package is exposed as `window.CrafterPayments`. `https://js.crafterpayments.com/v1/crafter.js` always serves the latest build on the v1 channel; its content changes, so it cannot be used with SRI. Use the versioned file when you need SRI.
