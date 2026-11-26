@@ -1,0 +1,69 @@
+{
+  "name": "@crafterpayments/react",
+  "version": "0.1.0",
+  "description": "CrafterPayments for React: provider, hooks, checkout button and embedded checkout. Next.js App Router ready.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test --experimental-test-module-mocks test/ && npm run size",
+    "size": "node scripts/size.mjs"
+  },
+  "keywords": [
+    "crafterpayments",
+    "crafter",
+    "checkout",
+    "payments",
+    "react",
+    "nextjs",
+    "embedded-checkout"
+  ],
+  "author": "Crafter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crafterhq/crafterpayments.git",
+    "directory": "packages/react"
+  },
+  "bugs": {
+    "url": "https://github.com/crafterhq/crafterpayments/issues"
+  },
+  "homepage": "https://docs.crafter.net.tr/en/developers",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@crafterpayments/js": "^0.1.0"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "esbuild": "^0.28.2",
+    "jsdom": "^26.1.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
