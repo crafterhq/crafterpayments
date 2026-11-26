@@ -6,7 +6,7 @@ Official client libraries for [CrafterPayments](https://crafterpayments.com) —
 |---|---|---|
 | [`@crafterpayments/js`](packages/js) | Browser: redirect, popup and embedded checkout | Preview |
 | [`@crafterpayments/react`](packages/react) | React components and hooks (Next.js App Router ready) | Preview |
-| `@crafterpayments/node` | Server: checkout sessions, webhooks | Planned |
+| [`@crafterpayments/node`](packages/node) | Server (Node.js 18+): checkout sessions, licenses, webhook and return signature verification | Preview |
 
 Secret keys (`cp_sk_…`) must only be used on your server. Browser packages accept publishable keys (`cp_pk_…`) only.
 

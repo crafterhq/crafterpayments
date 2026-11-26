@@ -1,0 +1,56 @@
+{
+  "name": "@crafterpayments/node",
+  "version": "0.1.0",
+  "description": "CrafterPayments server SDK for Node.js: checkout sessions, license verification, webhook and return signature verification.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "default": "./dist/index.mjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test/"
+  },
+  "keywords": [
+    "crafterpayments",
+    "crafter",
+    "checkout",
+    "payments",
+    "webhooks"
+  ],
+  "author": "Crafter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crafterhq/crafterpayments.git",
+    "directory": "packages/node"
+  },
+  "bugs": {
+    "url": "https://github.com/crafterhq/crafterpayments/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://docs.crafter.net.tr/en/developers"
+}
